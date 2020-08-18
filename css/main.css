@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Cherry Monospace-Lihght';
+    src: url('../fonts/cherry-monospace/Cherry\ Monospace-Light.ttf'); 
+    src: url('../fonts/cherry-monospace/Cherry\ Monospace-Light.ttf')
+    format( 'truetype' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /*
 *Text meant only for screen readers
 *https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
@@ -13,4 +23,25 @@
     position: absolute;
     width: 1px;
     word-wrap: normal !important;
+  }
+/*any anchor (a) anywhere inside a nav.*/
+  nav a{
+      text-decoration: none;
+      color: rgb(0, 200, 0);
+
+      font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+  }
+
+  
+
+  nav a:hover {
+      color: rgb(0, 0, 200);
+  }
+
+  h1 {
+      font-family: 'Cherry Monospace-Light', 'Courier New', 'Courier', monospace;
+  }
+/*"Direct descendant" - the ul must be directly inside the nav.*/
+  nav > ul {
+      list-style-type: square;
   }
